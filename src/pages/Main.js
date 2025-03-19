@@ -1,15 +1,15 @@
-import { Route } from 'react-router-dom'
+import { Routes, Route } from "react-router-dom"
+import MainHeader from "../components/MainHeader"
 
 const Main = () => {
     return (
         <section>
             <h1>This is the main page</h1>
-            <Route path='/main/new-user' element={ <p>New user</p> }/>
+            <Routes>
+                <Route path='/welcome/new-user' element={ <MainHeader /> } />
+            </Routes>
         </section>
     )
 }
 
 export default Main
-
-// The Route component in this welcome page essentially executes the values in it 
-// if the Main papge is active. 

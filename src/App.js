@@ -11,9 +11,9 @@ function App() {
       {/* Below is saying the Route component should be active when our url is
       'our-domain/welcome' . Between the tags of the Route component is the content
       that should be active when the url path is activated.  */}
-      <header>
+      {/* <header>
         <MainHeader />
-      </header>
+      </header> */}
       <main>
         <Routes>
           <Route path="/welcome" element={ <Main/> } />
