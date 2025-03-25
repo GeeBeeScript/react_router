@@ -1,17 +1,19 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import classes from '../components/Products.module.css'
 
 const Product = () => {
   return (
     <section>
+      <h4>Products page</h4>
       <ul>
         <li>
-          <Link to="/products/p1">Product, p1</Link>
+          <NavLink activeClassName={classes.active} to="/products/p1">Product, p1</NavLink>
         </li>
         <li>
-          <Link to="/products/p2">Product, p2</Link>
+          <NavLink to="/products/p2">Product, p2</NavLink>
         </li>
         <li>
-          <Link to="/products/p3">Product, p3</Link>
+          <NavLink to="/products/p3">Product, p3</NavLink>
         </li>
       </ul>
     </section>
